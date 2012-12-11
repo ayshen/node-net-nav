@@ -1,0 +1,15 @@
+﻿<mt:Window x:Class="NodeNetworkNavigator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mt="http://schemas.multitouch.com/Multitouch/2008/04"
+        xmlns:space="clr-namespace:InteractiveSpace.SDK.GUI;assembly=InteractiveSpace.SDK"
+        Title="MainWindow" Height="1120" Width="1678" Closing="Window_Closing">
+    <Grid Name="mainGrid">
+        <space:TrackingVizLayer x:Name="vizLayer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsFingerVisible="True" Background="Black" Margin="0,24,0,-24" />
+        <Rectangle Fill="DarkGray" Margin="0,899,0,-24"></Rectangle>
+        <Image Name="createButton" mt:MultitouchScreen.NewContact="createButton_Click" Source="newButton.png" Margin="87,921,1390,11"></Image>
+        <Image Name="editbutton" mt:MultitouchScreen.NewContact="editButton_Click" Source="editButton.png" Margin="527,921,950,11"></Image>
+        <Image Name="connectionButton" mt:MultitouchScreen.NewContact="connectionButton_Click" Source="connectionButton.png" Margin="1001,921,476,11"></Image>
+        <Image Name="trashbutton" mt:MultitouchScreen.NewContact="trashButton_Click" Source="trashButton.png" Margin="1425,921,52,11"></Image>
+    </Grid>
+</mt:Window>
